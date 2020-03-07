@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="../css/inscription.css">
+    <link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
+    <meta charset="utf-8">
+    <title></title>
+
+  </head>
+
+
+  
+  <body>
+
+
+
+    <div id="container">
+
+          <h1>Inscription</h1>
+
+      <form class="" action="../php/verification.php" method="POST">
+        <label for="">Nom</label>
+        <input type="text" name="nom" value="" placeholder="Entrez votre nom">
+
+        <label for="">prénom</label>
+        <input type="text" name="prenom" value="" placeholder="Entrez votre prénom">
+
+        <label for="">Identifiant</label>
+        <input type="text" name="pseudo" value="" placeholder="Entrez votre identifiant">
+        
+        <fieldset>
+            <legend> Quelle est votre civilité</legend>
+            <input type="radio"id="madame" name="civilite" value="Madame"><label for="Madame">Madame</label><!--formulaire à choix unique radio-->
+            <input type="radio"id="monsieur" name="civilite" value="Monsieur"><label for="Mosnieur">Monsieur</label>
+        </fieldset>
+        
+        <label for="">Mot de passe</label>
+        <input type="password" name="password" value="" placeholder="Entrez un mot de passe">
+
+        <label for="">Vérifiez votre mot de passe</label>
+        <input type="password" name="password2" value="" placeholder="Entrer votre mot de passe">
+
+        <label for="">Entrez votre mail</label>
+        <input type="email" name="mail" value="" placeholder="Entrez votre mail">
+
+        <label for="">Vérifiez votre mail</label>
+        <input type="email" name="mail2" value="" placeholder="Entrez votre mail">
+
+        <label for="">Adresse</label>
+        <input type="text" name="adresse" value="" placeholder="Entrez votre ville">
+
+        <label for="">Code Postale</label>
+        <input type="text" name="codePostal" value="" placeholder="Entrez votre Code Postale">
+
+        <label for="">Ville</label>
+        <input type="text" name="ville" value="" placeholder="Entrez votre ville">
+        
+        <div class="button">
+        <input type="submit" name='forminscription'id='submit' value='Inscription' >
+      </form>
+
+    </div>
+    </div>
+
+  </body>
+</html>

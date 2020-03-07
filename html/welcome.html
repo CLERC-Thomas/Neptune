@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang=fr dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <meta name="Language" content="fr">
+    <title>Hôtel Neptune</title>
+    <link rel="stylesheet" href="css/style.css">
+<div class="presentation">
+    <div class="mySlides fade">
+        <img src="image/chambre/chambre1.jpg"class="backgroundDefilement1">
+        <img src="image/chambre/fiche1.jpg"class="defilement1">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="image/chambre/chambre2.jpg" class="backgroundDefilement1">
+        <img src="image/chambre/fiche2.jpg"class="defilement1">
+    </div>
+
+    <div class="mySlides fade">
+        <img src="image/chambre/chambre3.jpg"class="backgroundDefilement1">
+        <img src="image/chambre/fiche3.jpg"class="defilement1">
+    </div>
+
+    <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+            setTimeout(showSlides, 4000); // Change d'image tous les 5 seconds
+        }
+    </script>
+</div>
+
+<div class="containerInfo">
+    <div class="bandeauInfo">
+        <div class="textInfo">
+            <h1>
+                Hotel Neptune
+            </h1>
+            <p>
+                Hôtel 2 étoiles idéalement situé au nord de Montpellier, l'Hôtel Neptune vous accueille au coeur d'un parc de verdure.
+                Notre établissement, entièrement rénové et redécoré, vous assure calme et détente après une journée de travail ou de découverte de notre belle région.
+                Nos 12 chambres, accueillantes et chaleureuses, se déclinent dans des ambiances à la fois cosy et contemporaines.
+            </p>
+            <h1>
+                " Style Décoratif Simple <br> Elegant & Moderne... "
+            </h1>
+        </div>
+        <div class="imgInfo">
+            <img src="image/infos.jpg" width="100%" height="100%">
+        </div>
+    </div>
+</div>
