@@ -17,8 +17,8 @@ $mail->SMTPAuth = true;
 $mail->IsHTML(true);
 
 //Authentication
-$mail->Username = "neptune.contacte";
-$mail->Password = "neptune123";
+$mail->Username = "UserName";
+$mail->Password = "MDP";
 
 //Set Params
 $mail->SetFrom("neptune.contacte@free.fr");
